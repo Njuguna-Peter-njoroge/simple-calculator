@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <div class="display">
+                <div id="history"></div>
+                <div id="result">0</div>
+            </div>
+            <div class="inputs">
+                <div class="number-inputs">
+                    <div class="input-group">
+                        <label for="num1">First Number:</label>
+                        <input type="text" id="num1" placeholder="Enter first number">
+                        <span class="error" id="num1Error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="num2">Second Number:</label>
+                        <input type="text" id="num2" placeholder="Enter second number">
+                        <span class="error" id="num2Error"></span>
+                    </div>
+                </div>
+                <div class="operations">
+                    <button id="add" class="operation-btn">+</button>
+                    <button id="subtract" class="operation-btn">-</button>
+                    <button id="multiply" class="operation-btn"> × </button>
+                    <button id="divide" class="operation-btn">÷</button>
+                </div>
+                <button id="clear" class="clear-btn">Clear</button>
+            </div>
+            <div class="history-container">
+                <h3>Calculation History</h3>
+                <ul id="historyList"></ul>
+                <button id="clearHistory" class="clear-history-btn">Clear History</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
